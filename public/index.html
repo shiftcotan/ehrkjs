@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EHRKJS Demo</title>
+  </head>
+  <body>
+    <script src="../dist/ehrkjs.umd.js"></script>
+    <script>
+      const { sun } = ehrkjs;
+      const sunData = sun(new Date(2021, 2, 1, 0, 0, 0));
+      document.body.innerText = JSON.stringify(sunData.apparentRightAscension);
+    </script>
+  </body>
+</html>
